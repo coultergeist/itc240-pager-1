@@ -1,0 +1,27 @@
+Desinations
+
+DestinationID
+Destination
+County
+Language
+Attractions
+Accomodations
+
+show create table Desinations
+
+drop table if exists Desinations;
+create table Desinations
+( DestinationID int unsigned not null auto_increment primary key,
+Destination varchar(50),
+Country varchar(50),
+Language varchar(20),
+Attractions text(20)
+);
+insert into Desinations values (NULL,"Hawaii","US","English","Volcanoes");
+
+
+
+
+
+
+
