@@ -1,0 +1,40 @@
+7) Here is our first postback form
+
+<? php
+//postback1.php
+
+    
+//the if block is the form itself
+if($_POST) //logic here //$_POST = super global
+{//show feedback
+    
+}else{//show form
+    //the echo statement followed by two single quotes let  us add infinite html between them
+    echo ' 
+    <form action="postback1.php">
+    First Name: <input type="text" name="FirstName" /><br />
+    <input type="submit" />
+    </form>
+   '; 
+}
+
+
+8)Here is our first working postback form
+
+<? php
+//postback1.php
+
+    
+//the if block is the form itself
+if(isset($_POST['FirstName'])) //single or double quotes are OK in arrays
+{//show feedback
+    echo $_POST['FirstName'];
+}else{//show form
+    //the echo statement followed by two single quotes let  us add infinite html between them
+    echo ' 
+    <form method="post" action="postback1.php">
+    First Name: <input type="text" name="FirstName" /><br />
+    <input type="submit" />
+    </form>
+   '; 
+}
