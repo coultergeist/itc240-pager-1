@@ -1,0 +1,18 @@
+<?php
+//time.php
+
+$time = "8am";
+
+
+
+?>
+
+<html>
+
+<body>
+
+<h1>The Time is: </h1>
+<p>This hour's color is: </p>
+<p>Interesting comment goes here: </p>
+</body>
+</html>
